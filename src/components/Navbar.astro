@@ -1,0 +1,44 @@
+---
+// const {href1, href2, href3, href4, href5} = Astro.props;
+---
+
+<nav class="navigation-bar">
+  <div class="logo">Logo</div>
+  <ul>
+    <li><a href="/">Ini link</a></li>
+    <li><a href="/tugas1">Tugas 1</a></li>
+    <li><a href="/tugas2">Tugas 2</a></li>
+    <li><a href="/tugas3">Tugas 3</a></li>
+    <li><a href="/tugas4">Tugas 4</a></li>
+    <li><a href="/tugas5">Tugas 5</a></li>
+    <li><a href="/tugas6">Tugas 6</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navigation-bar {
+    outline: 1px solid #eee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    display: flex;
+  }
+
+  a {
+    padding: 1rem;
+  }
+</style>
