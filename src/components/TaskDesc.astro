@@ -1,11 +1,15 @@
 ---
-const { judulPerintah, perintah } = Astro.props;
+const { perintah, deskripsi } = Astro.props;
 ---
 
 <header class="perintah">
   <div class="teks-perintah">
-    <h1 class="judul-perintah">{judulPerintah}</h1>
-    <p class="teks-perintah">{perintah}</p>
+    <h1 class="judul-perintah">{perintah}</h1>
+    <p class="teks-perintah">{deskripsi}</p>
+    <p class="disclaimer">
+      <strong>Disclaimer:</strong> Semua markup setelah deskripsi perintah ini saya
+      tempel dari tugas asli saya, tanpa perubahan sedikitpun. Tanpa CSS.
+    </p>
   </div>
 </header>
 
@@ -14,15 +18,21 @@ const { judulPerintah, perintah } = Astro.props;
     margin: 0 auto;
     padding: 2rem;
     color: #eee;
-    background-image: linear-gradient(150deg, #4d4fdb, #2165db, #9393df);
+    background-image: linear-gradient(150deg, #4648c7, #1c55b7, #7d7dbf);
   }
 
   .teks-perintah {
-    max-width: 60ch;
+    max-width: 70ch;
     margin: auto;
   }
 
   .judul-perintah {
     font-size: 1.5rem;
+  }
+
+  .disclaimer {
+    background: #222;
+    padding: 1rem;
+    text-align: center;
   }
 </style>
