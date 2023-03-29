@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro";
       menggunakan Astro.
     </p>
 
-    <a href="/tugas1" class="cta">Lihat tugas pertama</a>
+    <button class="cta"><a href="/tugas1">Lihat tugas pertama</a></button>
   </main>
 </Layout>
 
@@ -44,7 +44,6 @@ import Layout from "../layouts/Layout.astro";
 
   .cta {
     all: unset;
-    color: #ddd;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -60,12 +59,21 @@ import Layout from "../layouts/Layout.astro";
     display: block;
   }
 
-  .cta:is(:hover, :focus-within) {
+  .cta a {
+    text-decoration: none;
+    color: #ddd;
+  }
+
+  .cta:is(:hover, :focus-active) {
     cursor: pointer;
     background-position: left;
   }
 
-  .cta:focus-within {
+  .cta:focus-active {
     outline: 1px solid dodgerblue;
+  }
+
+  .cta:active {
+    transform: translateY(0.2rem);
   }
 </style>
