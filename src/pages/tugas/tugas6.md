@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
-judul: "Tugas 3"
+judul: "Tugas 6"
 perintah: "Satukan file latihan1.html sampai latihan5.html menjadi latihan6.html dan tampilkan logo metlan school di pojok kiri atas halaman web"
 deskripsi: "Tugas terakhir ini cuma salin tempel aja sih. Ga ada yang susah-susah amat. Di sini gua masukin beberapa elemen section karena awalnya gua pengen kasih CSS, tapi yah gua merasa terlalu banyak effort yang gua keluarkan. Gua pikir, ya lagian ga akan nambah nilai juga. Jadi, ga jadi. O iya, gua juga lupa nambahin gambar SMK Metland"
 kode: '<main>
