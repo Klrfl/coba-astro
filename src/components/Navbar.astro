@@ -2,32 +2,32 @@
 const navLinks = [
   {
     id: 1,
-    href: "/tugas1",
+    href: "tugas1",
     slug: "Tugas 1",
   },
   {
     id: 2,
-    href: "/tugas2",
+    href: "tugas2",
     slug: "Tugas 2",
   },
   {
     id: 3,
-    href: "/tugas3",
+    href: "tugas3",
     slug: "Tugas 3",
   },
   {
     id: 4,
-    href: "/tugas4",
+    href: "tugas4",
     slug: "Tugas 4",
   },
   {
     id: 5,
-    href: "/tugas5",
+    href: "tugas5",
     slug: "Tugas 5",
   },
   {
     id: 6,
-    href: "/tugas6",
+    href: "tugas6",
     slug: "Tugas 6",
   },
 ];
@@ -45,7 +45,7 @@ const navLinks = [
     {
       navLinks.map((navLink) => (
         <li>
-          <a href={navLink.href}>{navLink.slug}</a>
+          <a href={`/coba-astro/${navLink.href}`}>{navLink.slug}</a>
         </li>
       ))
     }
