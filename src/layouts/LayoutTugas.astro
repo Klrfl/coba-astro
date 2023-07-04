@@ -1,0 +1,27 @@
+---
+import Layout from "./Layout.astro";
+import TaskDesc from "../components/TaskDesc.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.judul}>
+  <TaskDesc perintah={frontmatter.perintah} deskripsi={frontmatter.deskripsi} />
+  <main>
+    <div class="kode">
+      <slot />
+    </div>
+
+    <div class="hasil">
+      <Fragment set:html={frontmatter.kode} />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 2rem;
+    max-width: 120ch;
+    margin-inline: auto;
+  }
+</style>
