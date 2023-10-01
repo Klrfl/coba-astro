@@ -14,5 +14,8 @@ const { page } = Astro.props;
 const frontmatter = page.data[0].frontmatter;
 ---
 
-<LayoutTugas {frontmatter} />
-<Pagination {page} />
+<LayoutTugas {frontmatter}>
+  <Fragment slot="kode" set:html={page.data[0].compiledContent()} />
+
+  <Pagination {page} />
+</LayoutTugas>

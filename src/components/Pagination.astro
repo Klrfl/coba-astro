@@ -1,37 +1,62 @@
 ---
 const { page } = Astro.props;
+const BASE_URL = import.meta.env.BASE_URL;
 ---
 
 <base href={import.meta.env.BASE_URL} />
 
 <div class="pagination">
+  <a class="start" href={`${BASE_URL}/tugas`}>Tugas pertama</a>
   {
     page.url.prev ? (
-      <a href={`${import.meta.env.BASE_URL}${page.url.prev}`}>
+      <a class="prev" href={`${BASE_URL}${page.url.prev}`}>
         {page.currentPage - 1}
       </a>
     ) : null
   }
   {
     page.url.next ? (
-      <a href={`${import.meta.env.BASE_URL}${page.url.next}`}>
+      <a class="next" href={`${BASE_URL}${page.url.next}`}>
         {page.currentPage + 1}
       </a>
     ) : null
   }
+  <a href={`${BASE_URL}/tugas/${page.lastPage}`} class="end">Tugas terakhir</a>
 </div>
 
 <style>
   .pagination {
     background: #ddd;
-    padding: 2rem;
+    margin-top: auto;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "start prev next end";
   }
 
   .pagination a {
     display: inline-block;
-    padding: 1rem;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .pagination a:hover {
+    backdrop-filter: invert(0.4);
+  }
+
+  .start {
+    grid-area: start;
+  }
+  .prev {
+    grid-area: prev;
+  }
+
+  .next {
+    grid-area: next;
+  }
+
+  .end {
+    grid-area: end;
   }
 </style>

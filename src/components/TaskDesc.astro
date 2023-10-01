@@ -7,27 +7,27 @@ const { perintah, deskripsi } = Astro.props;
     <h1 class="judul-perintah">{perintah}</h1>
     <p class="teks-perintah">{deskripsi}</p>
     <p class="disclaimer">
-      <strong>Disclaimer:</strong> Semua markup setelah deskripsi perintah ini saya
-      tempel dari tugas asli saya, tanpa perubahan sedikitpun. Tanpa CSS.
+      <strong>Disclaimer:</strong> Semua markup setelah deskripsi perintah ini
+      saya tempel dari tugas asli saya, tanpa perubahan sedikitpun. Tanpa CSS.
     </p>
   </div>
 </header>
 
 <style>
   header {
-    margin: 0 auto;
-    padding: 2rem;
+    padding-block: 4rem 2rem;
     color: #eee;
     background-image: linear-gradient(150deg, #4648c7, #1c55b7, #7d7dbf);
   }
 
   .teks-perintah {
-    max-width: 70ch;
+    max-width: 75ch;
     margin: auto;
   }
 
   .judul-perintah {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 0.9;
   }
 
   .disclaimer {

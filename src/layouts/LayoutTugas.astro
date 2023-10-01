@@ -6,22 +6,30 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.judul}>
-  <TaskDesc perintah={frontmatter.perintah} deskripsi={frontmatter.deskripsi} />
-  <main>
-    <div class="kode">
-      <slot />
-    </div>
+  <div class="wrapper">
+    <TaskDesc
+      perintah={frontmatter.perintah}
+      deskripsi={frontmatter.deskripsi}
+    />
+    <main>
+      <slot name="kode" />
 
-    <div class="hasil">
-      <Fragment set:html={frontmatter.kode} />
-    </div>
-  </main>
+      <article class="hasil">
+        <Fragment set:html={frontmatter.kode} />
+      </article>
+    </main>
+    <slot />
+  </div>
 </Layout>
 
 <style>
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   main {
     padding: 2rem;
-    max-width: 120ch;
-    margin-inline: auto;
+    max-width: 75ch;
   }
 </style>
