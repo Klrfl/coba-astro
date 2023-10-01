@@ -1,5 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
+slug: "tugas-5"
 judul: "Tugas 5"
 perintah: "Buatlah sebuah list dengan menggunakan ordered list, unordered list, dan tanpa keduanya"
 deskripsi: 'Ya begitulah ya. Tapi gua ga tau maksudnya "tanpa keduanya" apa.'

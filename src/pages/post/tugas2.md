@@ -1,5 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
+slug: "tugas-2"
 judul: "Tugas 2"
 perintah: "Buatlah code hyperlink yang akan mengalihkan ke halaman smk metland"
 deskripsi: "Iya. Gitu doang. Anjir"

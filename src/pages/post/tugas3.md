@@ -1,5 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
+slug: "tugas-3"
 judul: "Tugas 3"
 perintah: "Buatlah code yang menampilkan berbagai format text HTML"
 deskripsi: "Coba ya kita dikasih tugas yang agak susah dikit, kaya bikin tabel gitu misalnya..."

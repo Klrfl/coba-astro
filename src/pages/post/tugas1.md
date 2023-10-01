@@ -1,5 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
+slug: "tugas-1"
 judul: "Tugas 1"
 perintah: "Buatlah code yang menunjukkan berbagai macam heading, mulai dari heading 1 sampai heading 6"
 deskripsi: "Perintahnya untuk tugas ini cukup sederhana, kita hanya perlu membuat elemen h1 sampai h6."

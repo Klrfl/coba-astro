@@ -1,5 +1,6 @@
 ---
 layout: "../../layouts/LayoutTugas.astro"
+slug: "tugas-4"
 judul: "Tugas 4"
 perintah: "Buatlah sebuah table dengan data id user dan email"
 deskripsi: "Nah ini.. Di sini gua lupa kasih atribut supaya border setiap selnya kelihatan, tapi gapapa lah ya."
