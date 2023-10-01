@@ -1,23 +1,15 @@
----
-const navLinks = await Astro.glob("../pages/tugas/*.md");
----
-
 <nav class="navigation-bar">
   <div class="logo">Logo</div>
-  <button class="toggle-nav" id="open-navbar" title="open navbar"
-    >open navbar</button
-  >
+  <button class="toggle-nav" id="open-navbar" title="open navbar">
+    open navbar
+  </button>
   <ul>
-    <button class="toggle-nav" id="close-navbar" title="close navbar"
-      >close navbar</button
-    >
-    {
-      navLinks.map((navLink) => (
-        <li>
-          <a href={navLink.url}>{navLink.frontmatter.judul}</a>
-        </li>
-      ))
-    }
+    <button class="toggle-nav" id="close-navbar" title="close navbar">
+      close navbar
+    </button>
+    <li>
+      <a href="/coba-astro/tugas">Lihat tugas</a>
+    </li>
   </ul>
 </nav>
 
