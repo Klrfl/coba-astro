@@ -5,7 +5,7 @@ import TaskDesc from "../components/TaskDesc.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={frontmatter.judul}>
+<Layout title={frontmatter.judul} description={frontmatter.deskripsi}>
   <div class="wrapper">
     <TaskDesc
       perintah={frontmatter.perintah}
@@ -28,8 +28,16 @@ const { frontmatter } = Astro.props;
     display: flex;
     flex-direction: column;
   }
+
   main {
     padding: 2rem;
-    max-width: 75ch;
+  }
+
+  @media screen and (min-width: 50em) {
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
   }
 </style>
